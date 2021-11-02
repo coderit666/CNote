@@ -4,6 +4,7 @@
 > 2. **PDF版本** ： [**CNote** PDF 版本下载](https://pan.baidu.com/s/18FhBCx9izSP-kXPRwN1YBA)  提取码：dmqx 
 > 3. **视频教程** :  **CNote** 配套视频保姆级视频教程共计 170 节，学不会，算我输。
 > 4. **转载须知** ：以下所有文章与视频教程皆为我（江哥）的原创，转载请联系我们，如发现恶意抄袭/搬运，会动用法律武器维护自己的权益，让我们一起维护一个良好的技术创作环境！
+> 5. **Star支持**：**CNote** 开源不易，希望大家能 Satr\Fork 支持我们，你的支持就是我们持续更新的动力。
 
 <p align="center">
   <a href="https://mp.weixin.qq.com/s/6NYkBCQb34NSZR3EvsgjHw"><img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB-read-brightgreen" alt="在线阅读"></a>
