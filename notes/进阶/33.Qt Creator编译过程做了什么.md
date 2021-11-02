@@ -1,0 +1,76 @@
+## Qt Creator编译过程做了什么?
+
+![](https://img-blog.csdnimg.cn/img_convert/68665a597da91a563b24cf3787665031.png)
+
+- 当我们按下运行按钮的时, 其实Qt Creator编译器做了5件事情
+
++ 对源文件进行预处理, 生成预处理文件
++ 对预处理文件进行编译, 生成汇编文件
++ 对汇编文件进行编译, 生成二进制文件
++ 对二进制文件进行链接, 生成可执行文件
++ 运行可执行文件
+
+---
+
+- Qt Creator编译过程验证
+
++ **1.编写代码, 保存源文件:**
+
+  ```c
+  #include <stdio.h>
+  int main(){
+    printf("hello lnj\n");
+    return 0;
+  }
+  ```
+
+- **2.执行预处理编译**
+  ![](https://img-blog.csdnimg.cn/img_convert/2af92e78efb66b239f4ca96a99c6e228.png)
+
+- 执行预处理编译后生成的文件
+  ![](https://img-blog.csdnimg.cn/img_convert/362d51ee291b27f51140908a7244f463.png)
+
+- 打开预处理编译后生成的文件
+
+* 处理源文件中预处理相关的指令
+* 处理源文件中多余注释等
+  ![](https://img-blog.csdnimg.cn/img_convert/85fd0abb9c2aab02e1c4563bc1ec9ef8.png)
+
+---
+
+-  **3.执行汇编编译**
+   ![](https://img-blog.csdnimg.cn/img_convert/4fd0ccaf482c9cc55f01e765c417cf5e.png)
+-  执行汇编编译后生成的文件
+   ![](https://img-blog.csdnimg.cn/img_convert/a4c1f0baf9e24d3048dca3b46d6b466c.png)
+-  打开汇编编译后生成的文件
+   ![](https://img-blog.csdnimg.cn/img_convert/6f772a00140c7cf1676c8c20eb29a2e4.png)
+
+---
+
+-  **4.执行二进制编译**
+   ![](https://img-blog.csdnimg.cn/img_convert/35f2d59e43f7964b22a3bce00ac0b704.png)
+-  执行二进制编译后生成的文件
+   ![](https://img-blog.csdnimg.cn/img_convert/7869895f908c7b3527c3f8421852a3fd.png)
+-  打开二进制编译后生成的文件
+   ![](https://img-blog.csdnimg.cn/img_convert/aff25b0d0e698d8790b640cb1acc332e.png)
+
+---
+
+- **5.执行链接操作**
+
+* 将依赖的一些C语言函数库和我们编译好的二进制合并为一个文件
+  ![](https://img-blog.csdnimg.cn/img_convert/b0f09e30dd95ab87c87a5b3a8568bdf9.png)
+
+- 执行链接操作后生成的文件
+  ![](https://img-blog.csdnimg.cn/img_convert/6a20b54e83c2e2973ef46bd0cc015b72.png)
+
+---
+
+-  **6.运行链接后生成的文件**
+   ![](https://img-blog.csdnimg.cn/img_convert/c336c50cce49b91c0088449099ebeb88.png)
+
+## 
+
+最后，如果有任何疑问，请加微信 **leader_fengy** 拉你进学习交流群。
+
+开源不易，码字不易，如果觉得有价值，欢迎分享支持。

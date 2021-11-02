@@ -1,0 +1,114 @@
+## 枚举
+
+- 什么是枚举类型?
+
++ 在实际问题中,有些变量的取值被限定在一个有限的范围内。例如,一个星期内只有七天,一年只有十二个月,一个班每周有六门课程等等。如果把这些量说明为整型,字符型或其它类型 显然是不妥当的。
++ C语言提供了一种称为“枚举”的类型。在“枚举”类型的定义中列举出所有可能的取值, 被说明为该“枚举”类型的变量取值不能超过定义的范围。
++ 该说明的是,枚举类型是一种基本数据类型,而不是一种构造类型,因为它不能再分解为任何基本类型。
+  ![](https://img-blog.csdnimg.cn/img_convert/d475ee4ee2d87374bd67b5f25152548c.png)
+
+- 枚举类型的定义
+
++ 格式:
+
+```c
+enum　枚举名　{
+    枚举元素1,
+    枚举元素2,
+    ……
+};
+```
+
+- 示例:
+
+```c
+// 表示一年四季
+enum Season {
+    Spring,
+    Summer,
+    Autumn,
+    Winter
+};
+```
+
+- 枚举变量
+
++ 先定义枚举类型，再定义枚举变量
+
+```c
+enum Season {
+    Spring,
+    Summer,
+    Autumn,
+    Winter
+};
+enum Season s;
+```
+
+- 定义枚举类型的同时定义枚举变量
+
+```c
+enum Season {
+    Spring,
+    Summer,
+    Autumn,
+    Winter
+} s;
+```
+
+-  省略枚举名称，直接定义枚举变量
+
+```c
+enum {
+    Spring,
+    Summer,
+    Autumn,
+    Winter
+} s;
+```
+
+- 枚举类型变量的赋值和使用
+
+```c
+enum Season {
+    Spring,
+    Summer,
+    Autumn,
+    Winter
+} s;
+s = Spring; // 等价于 s = 0;
+s = 3; // 等价于 s = winter;
+printf("%d", s);
+```
+
+- 枚举使用的注意
+
++ C语言编译器会将枚举元素(spring、summer等)作为整型常量处理，称为枚举常量。
++ 枚举元素的值取决于定义时各枚举元素排列的先后顺序。默认情况下，第一个枚举元素的值为0，第二个为1，依次顺序加1。
++ 也可以在定义枚举类型时改变枚举元素的值
+
+```c
+enum Season {
+    Spring,
+    Summer,
+    Autumn,
+    Winter
+};
+// 也就是说spring的值为0，summer的值为1，autumn的值为2，winter的值为3
+```
+
+```c
+enum Season {
+    Spring = 9,
+    Summer,
+    Autumn,
+    Winter
+};
+// 也就是说spring的值为9，summer的值为10，autumn的值为11，winter的值为12
+```
+
+## 
+
+最后，如果有任何疑问，请加微信 **leader_fengy** 拉你进学习交流群。
+
+开源不易，码字不易，如果觉得有价值，欢迎分享支持。
