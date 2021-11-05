@@ -145,7 +145,7 @@
 
 ---
 
-## CNote 配套视频教程（附源代码）
+## CNote 配套C语言视频教程（附源代码）
 
 ​		**[视频源代码下载地址](https://mp.weixin.qq.com/s/Z5Bgl6tOVtmzKrg9q7WUPA)**
 
