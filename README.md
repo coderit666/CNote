@@ -8,6 +8,7 @@
 
 <p align="center">
   <a href="https://mp.weixin.qq.com/s/6NYkBCQb34NSZR3EvsgjHw"><img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB-read-brightgreen" alt="在线阅读"></a>
+    <a href="https://space.bilibili.com/668272954/?spm_id_from=333.999.0.0" alt="B站视频"></a>
   <a href="#公众号"><img src="https://img.shields.io/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-%E4%BB%A3%E7%A0%81%E6%83%85%E7%BC%98-green" alt="公众号"></a>
   <a href="#公众号"><img src="https://img.shields.io/badge/PDF-C%E8%AF%AD%E8%A8%80%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B-yellowgreen" alt="PDF"></a>
   <a href="#联系我"><img src="https://img.shields.io/badge/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC-weChat-orange" alt="联系我"></a>
